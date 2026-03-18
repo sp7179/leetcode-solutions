@@ -1,0 +1,14 @@
+name: Sync LeetCode
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: joshcai/leetcode-sync@v1
+        with:
+          username: shourish356
