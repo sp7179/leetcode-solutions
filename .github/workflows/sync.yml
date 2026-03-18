@@ -9,6 +9,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: joshcai/leetcode-sync@v1
+      - uses: gautamkrishnar/leetcode-github-actions@main
         with:
           username: shourish356
+          commit_message: "update leetcode solutions"
